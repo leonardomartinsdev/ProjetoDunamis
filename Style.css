@@ -1,0 +1,487 @@
+body {
+    border: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --blue: #1e1f52;
+    --orange: #bb4e2d;
+}
+
+#Top {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#Logo {
+    width: 350px;
+    height: 250px;
+    margin-left: 15px;
+}
+
+#Logo img {
+    width: 245px;
+    height: 175px;
+    padding-left: 100px;
+}
+
+.MenuTop {
+    margin-right: 120px;
+}
+
+.MenuOptions {
+    display: flex;
+    list-style: none;
+}
+
+/*     border-bottom: 5px solid #bb4e2d; */
+
+
+.MenuOptions li {
+    font-size: 25px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: -30px;
+    background-color: var(--blue);
+}
+
+/* Primeira versão do menu
+.MenuOptions li {
+    font-size: 25px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    padding: 25px;
+    margin-right: 15px;
+    background-color: var(--blue);
+}
+*/
+
+.ContactTop {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--blue);
+    font-size: 20px;
+}
+
+
+
+.MenuOptions li a {
+    color: white;
+}
+
+.anime1 {
+    width: 120px;
+    height: 40px;
+    transition: height 3s;
+}
+
+.anime1:hover {
+    height: 80px;
+    background-image: url(Imagens/menu1.png);
+}
+
+.anime2 {
+    width: 120px;
+    height: 40px;
+    transition: height 3s;
+}
+
+.anime2:hover {
+    height: 80px;
+    background-image: url(Imagens/menu2.png);
+}
+
+.anime3 {
+    width: 120px;
+    height: 40px;
+    transition: height 3s;
+}
+
+.anime3:hover {
+    height: 80px;
+    background-image: url(Imagens/menu3.jpg);
+}
+
+.anime4 {
+    width: 120px;
+    height: 40px;
+    transition: height 3s;
+}
+
+.anime4:hover {
+    height: 80px;
+    background-image: url(Imagens/menu4.jpg);
+}
+
+.anime5 {
+    width: 120px;
+    height: 40px;
+    transition: height 3s;
+}
+
+.anime5:hover {
+    height: 80px;
+    background-image: url(Imagens/menu5.png);
+}
+
+/*
+.anime1 {
+    -webkit-transition: background-color 3s height 8s;
+    transition: background-image 15s height 8s;
+    -webkit-transition-timing-function:ease-in-out;
+    transition-timing-function:ease-in-out;
+}
+
+.anime1:hover {
+    height: 140px;
+    background-image: url(Imagens/menu1.png);
+}
+
+
+.anime2 {
+    -webkit-transition: background-color 3s height 8s;
+    transition: background-image 15s height 8s;
+    transition-timing-function: ease;
+}
+
+.anime2:hover {
+    height: 140px;
+    background-image: url(Imagens/menu2.png);
+}
+
+.anime3 {
+    -webkit-transition: background-color 3s height 8s;
+    transition: background-image 15s height 8s;
+    transition-timing-function: ease;
+}
+
+.anime3:hover {
+    height: 140px;
+    background-image: url(Imagens/menu3.jpg);
+}
+
+.anime4 {
+    -webkit-transition: background-color 3s height 8s;
+    transition: background-image 15s height 8s;
+    transition-timing-function: ease;
+}
+
+.anime4:hover {
+    height: 140px;
+    background-image: url(Imagens/menu4.jpg);
+}
+
+.anime5 {
+    -webkit-transition: background-color 3s height 8s;
+    transition: background-image 15s height 8s;
+    transition-timing-function: ease;
+}
+
+.anime5:hover {
+    height: 140px;
+    background-image: url(Imagens/menu5.png);
+}
+*/
+
+.About {
+    display: flex;
+}
+
+.MainPhotos {
+    margin: 1px 550px 1px 100px;
+    position: relative;
+    overflow: visible;
+}
+
+.PrincipalImage {
+    position: absolute;
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide{
+    50%{
+        opacity: 1;
+        transform:scale(1.1,1.1);
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+}
+
+.PrincipalImage:nth-child(1){
+    
+}
+
+.PrincipalImage:nth-child(2){
+    animation-delay: 5s;
+}
+
+
+.PrincipalImage {
+    width: 550px;
+    height: 365px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.TopTitle {
+    text-align: center;
+    color: var(--orange);
+}
+
+.TopText p {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.TopText {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 100px;
+    margin-left: 150px;
+}
+
+.TopText button {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    align-self: center;
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+}
+
+
+.Materials h2 {
+    text-align: center;
+    color: var(--orange);
+}
+
+.MaterialsImage {
+    display: flex;
+}
+
+.MaterialsImage img {
+    width: 300px;
+    height: 300px;
+}
+
+.Image {
+   padding-left: 150px;
+}
+
+.MaterialsImage p {
+    text-align: center;
+    font-size: 22px;
+}
+
+.Image button {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--orange);
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.TextForm {
+    text-align: center;
+    color: var(--orange);
+    margin: 50px 0 -20px 0;
+}
+
+.SubForm {
+    text-align: center;
+    font-size: 22px;
+}
+
+.Form {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+}
+
+.FirstForm {
+    margin-right: 10px;
+}
+
+.FirstForm .FormOption textarea {
+    margin: 5px;
+    line-height: 1.5;
+}
+
+.SecondForm {
+    margin-left: 10px;
+}
+
+.FormOption input {
+    width: 400px;
+    height: 30px;
+    margin: 5px 0 12px 0;
+}
+
+.FormButton {
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--orange);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--blue);
+}
+
+.Rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Address {
+    color: white;
+}
+
+.MenuBotton nav ul li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px 200px 5px 5px;
+}
+
+
+.MenuBotton nav ul li a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.Follow a i {
+    color: white;
+    font-size: 35px;
+    padding: 0 25px 50px 15px;
+}
+
+.Follow h2 {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 400px) {
+
+    #FullSite {
+        margin: auto;
+        height: 100%;
+        display: grid;
+        grid-template: 
+        "Top"
+        "Content"
+        "Foot";
+        grid-auto-rows: auto;
+    }
+    header {
+        grid-area: Top;
+    }
+    Main {
+        grid-area: Content;
+    }
+    Footer {
+        grid-area: Foot;
+    }
+
+
+    .MenuTop {
+        display: none;
+        width: auto;
+        column-gap: 10px;
+        grid-template-rows: auto;
+    }
+
+    .anime1 .anime2 .anime3 .anime4 .anime5 {
+        display: none;
+    }
+
+    #Logo img {
+        align-items: center;
+    }
+
+    .About {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .PrincipalImage {
+        max-width: 400px;
+        height: 365px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+    .Lavatorio {
+        display: none;
+    }
+
+    .TopText p {
+        text-align: justify;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .MaterialsImage {
+        display: block;
+    }
+
+    .Image {
+        margin: auto;
+    }
+
+    .Form {
+        display: grid;
+    }
+
+    .Rodape .MenuBotton {
+        display: none;
+    }
+
+    .Address .Follow {
+        width: 100%;
+    }
+
+
+}
+
